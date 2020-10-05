@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Space Invaders</title>
+  </head>
+  <body style="text-align: center">
+    <canvas id="unity-canvas" style="width: 526px; height: 974px; background: #231F20"></canvas>
+    <script src="Build/space-invaders-2.loader.js"></script>
+    <script>
+      createUnityInstance(document.querySelector("#unity-canvas"), {
+        dataUrl: "Build/space-invaders-2.data",
+        frameworkUrl: "Build/space-invaders-2.framework.js",
+        codeUrl: "Build/space-invaders-2.wasm",
+        streamingAssetsUrl: "StreamingAssets",
+        companyName: "DefaultCompany",
+        productName: "Space Invaders",
+        productVersion: "1.0",
+      });
+    </script>
+  </body>
+</html>
